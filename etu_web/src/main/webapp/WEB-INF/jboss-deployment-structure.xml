@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+    <deployment>
+        <!-- Active la recherche d'EJB dans d'autres déploiements -->
+        <dependencies>
+            <module name="deployment.etu_ejb-1.0-SNAPSHOT.jar" />
+        </dependencies>
+        <!-- Autorise l'accès aux API EJB -->
+        <exclusions>
+            <module name="javaee.api" />
+        </exclusions>
+    </deployment>
+</jboss-deployment-structure>
